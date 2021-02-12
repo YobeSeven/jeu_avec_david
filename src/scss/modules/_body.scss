@@ -1,0 +1,19 @@
+//  Utilisez votre body pour mettre les class que vous comptez mettre souvent dans tout votre html //
+
+body{
+    margin: 0;
+
+    // Vos class pour Police de texte (voir src/scss/_fonts.scss) :  //
+
+
+
+
+
+    // Vos class pour Backgrounds images :  //
+
+    .image-jojo{
+        background-image: url('../../../public/img/Joestar.png');
+        background-size:cover;
+    }
+
+}

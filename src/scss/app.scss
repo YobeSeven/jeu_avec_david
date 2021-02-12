@@ -1,0 +1,24 @@
+// 1 - créer les fichier scss qu'il faut : Dans 'modules' : _corpsdusite / _footer ... _pagehome / _fonts / _variables.scss //
+
+// 2 - mettre des @import pour tout regrouper ici // 
+
+    // d'abord les scss qui se trouvent dans la même branche du dossier //
+
+@import './fonts';
+@import './variables';
+
+    // mettre en non-commentaire après avoir telecharger fontawesome , voir étape 4 dans terminal //
+
+$fa-font-path : "../../node_modules/@fortawesome/fontawesome-free/webfonts";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+
+    // mettre en non commentaire après avoir telecharger Bootstrap , voir étape 5 dans terminal 
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+    // mettre en dernier les scss qui regroupent les autres dans vos modules //
+
+@import './modules/style';

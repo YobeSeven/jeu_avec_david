@@ -1,0 +1,141 @@
+<!-- Voici tout ce qu'il y a à mettre dans votre terminal , une fois vos dossiers et fichiers ont été créer , et bien placer ! -->
+
+<!--
+
+SOMMAIRE : 
+    
+( COPIER LE TITRE DONT VOUS AVEZ BESOIN , PUIS ctrl+f ET COLLER ENSUITE POUR LE RETROUVER SUR LA PAGE )
+
+1 - d'abord pour lier votre app.scss
+2 - Telecharger Fontawesome
+3 - Telecharger Bootstrap et JQuery
+4 - Ignorer un fichier sur GitHub
+5 - Lier votre dossier vers github et mettre le 1er lien
+6 - Créer une nouvelle sauvergarde dans votre github
+7 - Créer une branch et travailler dessus dans votre github
+8 - Télécharger un dossier et garder le lien github
+
+-->
+
+<!-- 1 - d'abord pour lier votre app.scss -->
+
+    <!-- 1 -1 telecharger l'extention live sass compiler -->
+
+        <!-- appuyer sur option -> extention setting -> appuyez sur le 1er Edit in setting.json -->
+
+            <!-- mettre ce qui est en dessous juste apres cette ligne deja existante ->     "liveSassCompile.settings.autoprefix": [],
+
+                "liveSassCompile.settings.includeItems": [],
+                "liveSassCompile.settings.excludeList": [
+                    "**/node_modules/**",
+                    ".vscode/**"
+                ],
+                //pas de fichier map
+                "liveSassCompile.settings.generateMap": false,
+                "liveSassCompile.settings.formats": [
+                    //dist minified
+                    {
+                        "format": "expanded",
+                        "extensionName": ".css",
+                        "savePath": "/public/css"
+                    },
+                    //fichiers source
+                    // {
+                    //     "format": "compressed",
+                    //     "extensionName": ".min.css",
+                    //     "savePath": "/dist/css"
+                    // }
+                ],
+
+             -->
+
+        <!-- utiliser le Watch Sass ( en bas à droite ) pour chaque nouvelle connexion -->
+    
+    <!-- 1 -2 Où créer un nouveau bash dans votre terminal que vous utiliserez uniquement pour lier votre scss a votre css -->
+
+                        <!-- exemple -->
+                    <!-- sass --watch (chemin vers scss):(chemin vers css) -->
+                    
+                        <!-- application -->
+                    <!-- sass --watch src/scss/app.scss:public/css/app.css -->
+
+<!-- 2 - Telecharger Fontawesome ( voir src/scss/app.scss) -->
+
+                <!-- ( un à un )
+                    npm init -y
+                    npm i @fortawesome/fontawesome-free
+                -->
+
+<!-- 3 - Telecharger Bootstrap et JQuery ( voir home.html , en fin de body )-->
+
+                <!-- ( un à un )
+                    npm install bootstrap
+                    npm install jquery
+                    -->
+
+<!-- 4 - Ignorer un fichier sur GitHub -->
+        <!-- aller vers .gitignore -->
+
+
+<!-- 5 - Lier votre dossier vers github et mettre le 1er lien !-->
+
+<!-- 6 - Créer une nouvelle sauvergarde dans votre github -->
+
+                <!-- ( un à un )
+                    git add --all 
+                    git commit -m "NomSauvegarde"
+                    git push -u origin main
+                -->
+
+<!-- 7 - Créer une branch et travailler dessus dans votre github -->
+
+                <!-- 7-1 - Créer
+
+                    git branch NomBranch
+                -->
+
+                <!-- 7-2 - Aller vers Branch + Sauvegarder dedans
+
+                    git checkout NomBranch
+                    git add --all
+                    git commit -m "NomSauvegarde"
+                -->
+
+                <!-- 7-3 - Revenir sur Main
+
+                    git checkout main
+                -->
+
+                <!-- 7-4 - Transferer Branch dans Main (Etre dans Main)
+
+                    git merge NomBranch
+                -->
+
+                <!-- 
+                    7-5 - Voir étape 6
+                -->
+
+
+<!-- 8 - Télécharger un dossier et garder le lien github  -->
+
+                <!-- Après que la personne à partager le dossier avec vous , copier le lien du dernier commit -->
+
+                <!-- Lancez github et écrire : -->
+                
+                    <!-- 
+                        cd OneDrive ou Desktop
+                        ls
+                        cd Bureau
+                        git clone LIEN
+                    -->
+
+                    <!-- 
+                        Créer votre branche ( étape 7 ) et télécharger les modules ( étape 2 et  3 )
+                    -->
+
+
+
+
+
+
+
